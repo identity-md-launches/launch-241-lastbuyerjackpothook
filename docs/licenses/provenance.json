@@ -1,0 +1,42 @@
+[
+  {
+    "path": "docs/licenses/forge-std/LICENSE-APACHE",
+    "url": "https://raw.githubusercontent.com/foundry-rs/forge-std/3e2295d50379faa6c8e9859d51b1f97a69a830d1/LICENSE-APACHE",
+    "sha256": "50b6bf8bdb63265ce14953b480b7aaa0271e78f56843b99c184abd3ae5048cd7"
+  },
+  {
+    "path": "docs/licenses/forge-std/LICENSE-MIT",
+    "url": "https://raw.githubusercontent.com/foundry-rs/forge-std/3e2295d50379faa6c8e9859d51b1f97a69a830d1/LICENSE-MIT",
+    "sha256": "6d185dfe089d4de346d391fc5997fbd4739bad1d6556010413c10f420d704ecc"
+  },
+  {
+    "path": "docs/licenses/uniswap-hooks/LICENSE",
+    "url": "https://raw.githubusercontent.com/OpenZeppelin/uniswap-hooks/b52f464aa0af8fcd8f16cdad9ae43581deb5cd47/LICENSE",
+    "sha256": "a0deea99c3c6b9323ba878db4e6e027962aed612af8d4ac2bc6f366e15a06934"
+  },
+  {
+    "path": "docs/licenses/openzeppelin-contracts/LICENSE",
+    "url": "https://raw.githubusercontent.com/OpenZeppelin/openzeppelin-contracts/fcbae5394ae8ad52d8e580a3477db99814b9d565/LICENSE",
+    "sha256": "13cd784a6c31361f0e0c6aa3b410a1cb9a079868b7314c13e3eb8a75351746b9"
+  },
+  {
+    "path": "docs/licenses/v4-core/BUSL_LICENSE",
+    "url": "https://raw.githubusercontent.com/Uniswap/v4-core/46c6834698c48bc4a463a86d8420f4eb1d7f3b75/licenses/BUSL_LICENSE",
+    "sha256": "cd5241d8e1afe7098fa0f21059f7153348fdd25dbae5a8383a5f1dd2eb590321"
+  },
+  {
+    "path": "docs/licenses/v4-core/MIT_LICENSE",
+    "url": "https://raw.githubusercontent.com/Uniswap/v4-core/46c6834698c48bc4a463a86d8420f4eb1d7f3b75/licenses/MIT_LICENSE",
+    "sha256": "b7b0c4379346af0701f5e4df9c861295d4a3af91dc3b15eb4356ebc571303df9"
+  },
+  {
+    "path": "docs/licenses/solmate/LICENSE",
+    "url": "https://raw.githubusercontent.com/transmissions11/solmate/89365b880c4f3c786bdd453d4b8e8fe410344a69/LICENSE",
+    "sha256": "2342e3df1d1c72d9ee74f5ad3161a769f623e206c4d7ef7192f86ad119b8fe4b"
+  },
+  {
+    "path": "docs/licenses/v4-periphery/LICENSE",
+    "url": "https://raw.githubusercontent.com/Uniswap/v4-periphery/9969eec44cfdf07e24b41de47f40276a58401976/LICENSE",
+    "sha256": "66eb4bd7506d0a33cc953ed77c1fee2fe6a34d8c0ac40d4e852e6bfbf754f80e"
+  }
+]
