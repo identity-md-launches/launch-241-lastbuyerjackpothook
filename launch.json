@@ -1,0 +1,26 @@
+{
+  "kind": "univ4_hook",
+  "hook": {
+    "contract": "LastBuyerJackpotHook",
+    "constructorArgs": [
+      "0xE03A1074c86CFeDd5C142C4F04F1a1536e203543"
+    ],
+    "permissions": [
+      "afterSwap",
+      "afterSwapReturnDelta"
+    ]
+  },
+  "token": {
+    "contract": "LaunchToken",
+    "name": "Last Buyer",
+    "symbol": "LBUY",
+    "decimals": 18
+  },
+  "pool": {
+    "pairedCurrency": "0x0000000000000000000000000000000000000000",
+    "fee": 3000,
+    "tickSpacing": 60,
+    "initialPrice": "78588986356927097284479352776873"
+  },
+  "notes": "Sepolia test toy with no value. Sources: src/LastBuyerJackpotHook.sol and src/LaunchToken.sol; ABI exports: docs/abi/LastBuyerJackpotHook.json and docs/abi/LaunchToken.json. The hook takes only the literal Sepolia PoolManager argument; the token takes no constructor arguments. Only afterSwap and afterSwapReturnDelta are enabled (address bits 0x0044 under mask 0x3fff); construction validates the hook address and the factory mines its CREATE2 salt. The intended pool orders native ETH as currency0 and deployed LBUY as currency1. initialPrice is decimal sqrtPriceX96, TickMath.getSqrtPriceAtTick(138000), matching test/BaseHookTest.sol. That harness seeds token-only liquidity below this starting tick, allowing the first buy with no ETH reserve. Each exact-input ETH buy contributes floor(gross LBUY output / 100) through a positive unspecified return delta backed by ERC-6909 claims at PoolManager. Sells, exact-output buys and non-native pools do not feed or update rounds. Specified input of at least 0.001 ETH plus a canonical nonzero address in exactly 32 bytes of hookData sets the leader and resets a 3600-second timer. Malformed data still pays the fee without qualifying; there is no sender fallback. Router hookData is unauthenticated and can gift leadership. buy(key, minOut) authenticates msg.sender, applies the same fee once, enforces net output and refunds unspent ETH. Qualification uses specified input even for partial fills. Anyone may claim after expiry, but payment goes to the recorded leader; a qualifying buy before claim resets the timer. State is isolated by PoolId. Unsolicited claim donations are unassigned surplus. The hook can serve other native-token pools, so services and the frontend must bind to the intended pool. Launch policy and signed artifact linkage belong to services; publication, attestation, admission and deployment follow this stage. This manifest does not assert independent review approval or a live deployment."
+}
